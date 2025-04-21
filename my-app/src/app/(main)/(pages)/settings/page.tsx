@@ -1,7 +1,9 @@
 import react from "react"
 type Props ={}
+import ProfileForm from "@/app/components/forms/profile-form"
 
-const Setting = (props:Props) =>{
+const Settings = (props:Props) =>{
+    // wire up profile pic
     return(
         <div className="flex flex-col gap-4">
       <h1 className="sticky top-0 z-[10] flex items-center justify-between border-b bg-background/50 p-6 text-4xl backdrop-blur-lg">
@@ -16,10 +18,13 @@ const Setting = (props:Props) =>{
             Add or Update Information
             </p>
         </div>
-
+        
+          <ProfileForm user = "user"></ProfileForm>
+          // need to put onawait part 
       </div>
       
       </div>
     )
 }
+export default Settings
 
