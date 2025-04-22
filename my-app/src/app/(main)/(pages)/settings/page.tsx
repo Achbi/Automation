@@ -20,7 +20,7 @@ const Settings = (props:Props) =>{
         </div>
         
           <ProfileForm user = "user"></ProfileForm>
-          // need to put onawait part 
+          // need to put onawait part  
       </div>
       
       </div>
