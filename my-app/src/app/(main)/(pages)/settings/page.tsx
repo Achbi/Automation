@@ -1,6 +1,7 @@
 import react from "react"
 type Props ={}
 import ProfileForm from "@/app/components/forms/profile-form"
+import ProfilePicture from "./_components/profile-picture"
 
 const Settings = (props:Props) =>{
     // wire up profile pic
@@ -18,6 +19,7 @@ const Settings = (props:Props) =>{
             Add or Update Information
             </p>
         </div>
+         <ProfilePicture></ProfilePicture>
         
           <ProfileForm user = "user"></ProfileForm>
           // need to put onawait part  
