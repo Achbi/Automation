@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full-Stack Workflow Automation SaaS 🚀
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=prisma&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-8C52FF?style=for-the-badge&logo=clerk&logoColor=white)
+![Neon](https://img.shields.io/badge/Neon-0EED9A?style=for-the-badge&logo=neon&logoColor=black)
 
-First, run the development server:
+A complete B2C SaaS application that allows users to build powerful automation workflows, connecting their favorite apps like Google Drive, Slack, Discord, and Notion.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+What makes this project unique? **All third-party connections were built from scratch!** 😉 We intentionally avoided pre-built integration libraries to demonstrate the deep engineering required to handle OAuth, webhooks, and API interactions in a real-world product.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![placeholder](https://aceternity.com/images/products/image/remix-run-template.png)
+*(Image: Placeholder for a screenshot of the workflow builder)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ✨ Features
 
-## Learn More
+### 🤖 Core Automation
+* **Automation Flows**: Create powerful, multi-step automation workflows.
+* **Trigger & Action System**: Define a trigger event (e.g., new file in Google Drive) and a sequence of actions that follow.
+* **Custom Notifications**: Send custom messages to Slack and Discord channels or users.
+* **Database Integration**: Automatically create new entries in a Notion database as part of a flow.
 
-To learn more about Next.js, take a look at the following resources:
+### 🎨 Advanced Workflow Builder UI
+* **Drag & Drop Interface**: An intuitive, node-based canvas for building workflows.
+* **Infinite Canvas**: Never run out of space for your complex automations.
+* **Mini Map**: Easily navigate large and complex workflows.
+* **Redesigned Nodes**: Beautiful and clear nodes to represent triggers and actions.
+* **Expandable Sidebar**: A draggable and expandable sidebar for managing nodes and settings.
+* **Stunning UI**: Built with **Aceternity UI** and **Shadcn UI** for a modern, best-in-class user experience.
+* **Light & Dark Mode**: Seamlessly switch between themes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💼 SaaS & Platform
+* **Stripe Subscriptions**: Charge users with recurring monthly subscriptions.
+* **Credit-Based Billing**: Implement a pay-as-you-go model where users consume credits for actions.
+* **Secure Authentication**: User sign-up, sign-in, and management powered by Clerk.
+* **Google Drive Integration**: Connect a user's Google Drive and watch for file changes in real-time.
+* **Functioning Landing Page**: A beautiful, responsive landing page to attract customers.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Framework**: Next.js 14 (with App Router)
+* **Language**: TypeScript
+* **Styling**: Tailwind CSS
+* **UI Components**: Aceternity UI, Shadcn UI
+* **Database ORM**: Prisma
+* **Database**: Neon (Serverless Postgres)
+* **Authentication**: Clerk
+* **Payments**: Stripe
+* **File Uploads**: Uploadcare
+* **Local Development**: `ngrok` for testing webhooks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Node.js & npm
+* A Clerk account for authentication.
+* A Google Cloud Platform project with OAuth credentials enabled.
+* A Stripe account with API keys.
+* A Neon account for the database.
+* An Uploadcare account for file handling.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    cd <repository-name>
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Setup environment variables:**
+    Create a `.env.local` file in the root and add the necessary API keys and secrets from the services listed in the prerequisites.
+
+    ```env
+    # Clerk
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
+
+    # Stripe
+    STRIPE_SECRET_KEY=
+    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+
+    # Neon Database
+    DATABASE_URL=
+
+    # Google OAuth
+    GOOGLE_CLIENT_ID=
+    GOOGLE_CLIENT_SECRET=
+
+    # etc...
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    The application will be available at `http://localhost:3000`.
+
+---
+
+## 🎥 Video Development Journey
+
+This entire project was built on video, documenting the process from a blank canvas to a fully functional SaaS application. Use the timestamps below to navigate to specific parts of the build.
+
+* `08:46` - **Project Setup**
+* `09:29` - **How to use Shadcn UI in Next.js 14**
+* `11:49` - **How to use Aceternity UI in Next.js 14**
+* `14:46` - **How to use HTTPS in localhost for Next.js 14**
+* `17:04` - Navbar & Component Styling
+* `24:55` - **Building the Landing Page**
+* `01:15:13` - Building the Draggable Sidebar
+* `01:26:39` - **How to setup Dark Mode and Light Mode**
+* `01:32:48` - Building the Settings Page
+* `01:42:05` - **Prisma and Neon Tech Setup**
+* `01:49:07` - **How to upload files with Uploadcare**
+* `01:59:09` - **How to setup Authentication with Clerk**
+* `02:05:54` - Understanding Google Scopes for OAuth
+* `02:06:55` - **How to setup Google Console for API Access**
+* `02:12:39` - **How to use Ngrok in a Next.js 14 app**
+* `02:15:40` - Creating Custom Sign-in and Sign-up Pages
+* `02:51:37` - **Implementing Global State Management for Integrations**
