@@ -108,25 +108,3 @@ What makes this project unique? **All third-party connections were built from sc
     The application will be available at `http://localhost:3000`.
 
 ---
-
-## 🎥 Video Development Journey
-
-This entire project was built on video, documenting the process from a blank canvas to a fully functional SaaS application. Use the timestamps below to navigate to specific parts of the build.
-
-* `08:46` - **Project Setup**
-* `09:29` - **How to use Shadcn UI in Next.js 14**
-* `11:49` - **How to use Aceternity UI in Next.js 14**
-* `14:46` - **How to use HTTPS in localhost for Next.js 14**
-* `17:04` - Navbar & Component Styling
-* `24:55` - **Building the Landing Page**
-* `01:15:13` - Building the Draggable Sidebar
-* `01:26:39` - **How to setup Dark Mode and Light Mode**
-* `01:32:48` - Building the Settings Page
-* `01:42:05` - **Prisma and Neon Tech Setup**
-* `01:49:07` - **How to upload files with Uploadcare**
-* `01:59:09` - **How to setup Authentication with Clerk**
-* `02:05:54` - Understanding Google Scopes for OAuth
-* `02:06:55` - **How to setup Google Console for API Access**
-* `02:12:39` - **How to use Ngrok in a Next.js 14 app**
-* `02:15:40` - Creating Custom Sign-in and Sign-up Pages
-* `02:51:37` - **Implementing Global State Management for Integrations**
