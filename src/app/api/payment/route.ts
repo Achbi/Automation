@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   const stripe = new Stripe(process.env.STRIPE_SECRET!, {
     typescript: true,
-    apiVersion: '2023-10-16',
+    apiVersion: '2023-10-24',
   })
   const data = await req.json()
   const session = await stripe.checkout.sessions.create({
